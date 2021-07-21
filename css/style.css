@@ -11,3 +11,12 @@
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
 }
+
+body {
+    background-color: var(--color-white);
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
