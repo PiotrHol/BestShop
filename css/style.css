@@ -76,10 +76,14 @@ header li a:hover {
 
 .open-section {
     width: 100%;
+}
+
+.open-section--content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 130px;
 }
 
 .open-section__head {
@@ -88,7 +92,6 @@ header li a:hover {
     font-size: 49px;
     line-height: 57px;
     color: var(--color-black);
-    margin: 130px 0 20px 0;
 }
 
 .open-section__text {
@@ -97,6 +100,7 @@ header li a:hover {
     font-size: 16px;
     line-height: 22px;
     color: var(--color-black);
+    margin: 20px 0 38px 0;
 }
 
 .open-section__btn {
@@ -111,7 +115,6 @@ header li a:hover {
     padding: 22px 157px;
     border-radius: 40px;
     box-shadow: 5px 10px 14px #07ACE629;
-    margin-top: 38px;
 }
 
 .open-section__image {
