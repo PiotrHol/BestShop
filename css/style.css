@@ -1,6 +1,3 @@
-/*font-family: 'Open Sans', sans-serif;*/
-/*font-family: 'Raleway', sans-serif;*/
-
 :root {
     --color-primary: #08A6E4;
     --color-primary-shadow: rgba(7, 172, 230, .16);
@@ -10,6 +7,13 @@
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
+    --color-head-foot-shadow: #00000029;
+    --color-shadow: #07ACE629;
+    --color-border: #E8E9ED;
+    --color-blue: #07ACE6;
+    --color-dark-blue: #13253B;
+    --color-border-grey: #95989A;
+    --color-contact-grey: #707070;
 }
 
 * {
@@ -30,7 +34,7 @@ body {
 header {
     height: 70px;
     width: 100%;
-    box-shadow: 0 3px 6px #00000029;
+    box-shadow: 0 3px 6px var(--color-head-foot-shadow);
 }
 
 .header-container {
@@ -114,7 +118,7 @@ header li a:hover {
     background-color: var(--color-primary);
     padding: 22px 157px;
     border-radius: 40px;
-    box-shadow: 5px 10px 14px #07ACE629;
+    box-shadow: 5px 10px 14px var(--color-shadow);
 }
 
 .open-section__image {
@@ -239,7 +243,7 @@ header li a:hover {
 
 .benefits-content__electronic {
     background-color: var(--color-white);
-    border: 1px solid #E8E9ED;
+    border: 1px solid var(--color-border);
     border-radius: 5px;
     margin-bottom: 37px;
 }
@@ -268,7 +272,7 @@ header li a:hover {
     width: 623px;
     height: 100%;
     background-color: var(--color-white);
-    border: 1px solid #E8E9ED;
+    border: 1px solid var(--color-border);
     border-radius: 5px;
 }
 
@@ -295,7 +299,7 @@ header li a:hover {
 }
 
 .benefits-text--red::after {
-    background-color: #FB3B64;
+    background-color: var(--color-redish);
 }
 
 .benefits-text--blue::after {
@@ -341,7 +345,7 @@ header li a:hover {
     width: 440px;
     height: 100%;
     background-color: var(--color-green);
-    border: 1px solid #E8E9ED;
+    border: 1px solid var(--color-border);
     border-radius: 5px;
     position: relative;
 }
@@ -414,7 +418,7 @@ header li a:hover {
 }
 
 .pricing-box--blue {
-    border: 1px solid #07ACE6;
+    border: 1px solid var(--color-blue);
 }
 
 .pricing-box--green {
@@ -424,7 +428,7 @@ header li a:hover {
 .pricing-box--bigger {
     width: 405px;
     height: 500px;
-    box-shadow: 5px 10px 27px #07ACE629;
+    box-shadow: 5px 10px 27px var(--color-shadow);
 }
 
 .pricing-box__price {
@@ -432,7 +436,7 @@ header li a:hover {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1;
-    color: #13253B;
+    color: var(--color-dark-blue);
 }
 
 .pricing-box__price--head {
@@ -451,7 +455,7 @@ header li a:hover {
 }
 
 .pricing-box__price--number-blue {
-    color: #07ACE6;
+    color: var(--color-blue);
 }
 
 .pricing-box__price--number-green {
@@ -520,8 +524,8 @@ header li a:hover {
 
 .pricing-box__btn--blue {
     padding: 16px 64px;
-    background-color: #07ACE6;
-    box-shadow: 5px 10px 14px #07ACE629;
+    background-color: var(--color-blue);
+    box-shadow: 5px 10px 14px var(--color-shadow);
 }
 
 .pricing-box__btn--green {
@@ -607,11 +611,11 @@ header li a:hover {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #707070;
+    color: var(--color-contact-grey);
     padding: 5px 0;
     outline: none;
     border: 1px solid white;
-    border-bottom: 1px solid #95989A;
+    border-bottom: 1px solid var(--color-border-grey);
 }
 
 .contact__form-element:focus {
@@ -623,7 +627,7 @@ header li a:hover {
     font-weight: 400;
     font-size: 12px;
     line-height: 17px;
-    color: #707070;
+    color: var(--color-contact-grey);
     margin-bottom: 20px;
     cursor: pointer;
     display: flex;
@@ -641,7 +645,7 @@ header li a:hover {
     height: 24px;
     display: block;
     flex-shrink: 0;
-    border: 1px solid #95989A;
+    border: 1px solid var(--color-border-grey);
     border-radius: 4px;
     margin-right: 10px;
 }
@@ -660,7 +664,7 @@ header li a:hover {
     align-self: flex-end;
     border: none;
     background-color: var(--color-primary);
-    box-shadow: 5px 10px 14px #07ACE629;
+    box-shadow: 5px 10px 14px var(--color-shadow);
     border-radius: 35px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -672,7 +676,7 @@ header li a:hover {
 footer {
     width: 100%;
     background-color: var(--color-light-grey);
-    box-shadow: 0 -5px 40px #00000029;
+    box-shadow: 0 -5px 40px var(--color-head-foot-shadow);
 }
 
 .footer-container {
