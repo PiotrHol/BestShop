@@ -2,6 +2,6 @@
 
 Strona internetowa typu *one-page*, przedstawiająca przykładową stronę firmy, oferującej zarządzanie sklepami online.
 
-## Demo
+[comment]: <> (## Demo)
 
-Wykonana strona znajduje się pod adresem: https://piotrhol.github.io/BestShop/
+[comment]: <> (Wykonana strona znajduje się pod adresem: https://piotrhol.github.io/BestShop/)
