@@ -833,7 +833,7 @@ header li a:hover {
   display: block;
   width: 11px;
   height: 11px;
-  background-image: url("../../assets/Ckechmark-1.svg");
+  background-image: url("../assets/Ckechmark-1.svg");
   background-size: cover;
   margin-right: 10px;
 }
@@ -843,7 +843,7 @@ header li a:hover {
   display: block;
   width: 11px;
   height: 11px;
-  background-image: url("../../assets/Close.svg");
+  background-image: url("../assets/Close.svg");
   background-size: cover;
   margin-right: 10px;
 }
@@ -995,7 +995,7 @@ header li a:hover {
 }
 
 .contact__check-regulation input:checked + span {
-  background-image: url("../../assets/Checkmark.svg");
+  background-image: url("../assets/Checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #08A6E4;
