@@ -1,0 +1,50 @@
+footer {
+  width: 100%;
+  background-color: $color-light-grey;
+  box-shadow: 0 -5px 40px $color-head-foot-shadow;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 20px 0 17px 0;
+}
+
+.footer-text h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 30px;
+  color: $color-primary;
+  margin-bottom: 6px;
+}
+
+.footer-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: $color-grey;
+}
+
+.footer-logo {
+  display: flex;
+}
+
+.footer-link {
+  display: block;
+  margin-left: 20px;
+}
+
+.footer-link:focus {
+  outline: none;
+}
+
+.footer-logo__img {
+  width: 24px;
+  height: 24px;
+}

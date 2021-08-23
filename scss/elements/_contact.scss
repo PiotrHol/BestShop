@@ -1,0 +1,140 @@
+.contact-container {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.contact-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-information {
+  margin-right: 114px;
+}
+
+.contact-information__text {
+  color: $color-black;
+  margin-bottom: 40px;
+}
+
+.contact-information__text h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 57px;
+  margin-bottom: 22px;
+}
+
+.contact-information__text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contact-information__address {
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-grey;
+}
+
+.contact-icon {
+  width: 27px;
+  height: 27px;
+  margin-right: 10px;
+}
+
+.contact-icon--phone {
+  margin-left: 20px;
+}
+
+.contact-form form {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__input-description {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3.28px;
+  color: $color-primary;
+}
+
+.contact__form-element {
+  margin: 10px 0 30px 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-contact-grey;
+  padding: 5px 0;
+  outline: none;
+  border: 1px solid $color-white;
+  border-bottom: 1px solid $color-border-grey;
+}
+
+.contact__form-element:focus {
+  border-bottom: 1px solid $color-primary;
+}
+
+.contact__check-regulation {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: $color-contact-grey;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+}
+
+.contact__check-regulation input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.contact__check-regulation span {
+  width: 24px;
+  height: 24px;
+  display: block;
+  flex-shrink: 0;
+  border: 1px solid $color-border-grey;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.contact__check-regulation input:checked + span {
+  background-image: url("../../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid $color-primary;
+}
+
+.contact__form-btn {
+  display: inline-block;
+  width: 226px;
+  height: 57px;
+  align-self: flex-end;
+  border: none;
+  background-color: $color-primary;
+  box-shadow: 5px 10px 14px $color-shadow;
+  border-radius: 35px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  color: $color-white;
+}
