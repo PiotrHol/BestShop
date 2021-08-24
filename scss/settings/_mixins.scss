@@ -1,0 +1,5 @@
+@mixin mediaTemp($dimension) {
+  @media (max-width: $dimension) {
+    @content;
+  }
+}
