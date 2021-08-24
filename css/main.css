@@ -374,6 +374,12 @@ body {
   width: 1352px;
   margin: 0 auto;
 }
+@media (max-width: 1352px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
 
 header {
   height: 70px;
