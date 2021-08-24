@@ -1,4 +1,8 @@
 .open-section {
+  @include mediaTemp(830px) {
+    position: relative;
+    z-index: -3;
+  }
   width: 100%;
 }
 

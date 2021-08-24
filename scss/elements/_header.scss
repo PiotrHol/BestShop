@@ -4,9 +4,11 @@ header {
   box-shadow: 0 3px 6px $color-head-foot-shadow;
 
   .header-container {
+    height: inherit;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 
     h1 {
       font-family: 'Raleway', sans-serif;
@@ -15,14 +17,96 @@ header {
       font-weight: 300;
       color: $color-primary;
       padding: 16px 0;
+      @include mediaTemp(830px) {
+        margin-left: 10px;
+      }
+    }
+
+    .menu-icon {
+      @include mediaTemp(830px) {
+        display: inline-block;
+        cursor: pointer;
+        width: 20px;
+        height: 16px;
+        margin-right: 15px;
+        position: relative;
+        .navicon {
+          display: block;
+          background-color: $color-primary;
+          width: 20px;
+          height: 2px;
+          position: absolute;
+          top: 5px;
+          transition: background .2s ease-out;
+          &::before, &::after {
+            content: "";
+            display: block;
+            background-color: $color-primary;
+            width: 20px;
+            height: 2px;
+            position: absolute;
+            transition: all .2s ease-out;
+          }
+          &::before {
+            top: -5px;
+          }
+          &::after {
+            top: 5px;
+          }
+        }
+      }
+      @include mediaTemp(245px) {
+        display: none;
+      }
+      display: none;
+    }
+
+    .menu-btn {
+      display: none;
+      &:checked ~ .menu-icon span {
+        background: transparent;
+      }
+      &:checked ~ .menu-icon span::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+      &:checked ~ .menu-icon span::after {
+        transform: rotate(-45deg);
+        top: 0;
+      }
+      &:checked ~ nav {
+        transform: translate(0);
+      }
     }
 
     nav {
+      @include mediaTemp(830px) {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        background: $color-white;
+        transform: translate(100%);
+        transition: all 0.5s ease-out;
+        box-shadow: 0 3px 6px $color-head-foot-shadow;
+      }
       ul {
+        @include mediaTemp(830px) {
+          display: block;
+          margin-top: 16px;
+          margin-bottom: 20px;
+        }
         list-style: none;
         display: flex;
-
         a {
+          @include mediaTemp(830px) {
+            width: 100%;
+            margin: 0;
+            height: auto;
+            text-align: left;
+            padding: 14px 25px;
+          }
           text-decoration: none;
           text-transform: uppercase;
           display: inline-block;
@@ -35,9 +119,11 @@ header {
           text-align: center;
           color: $color-grey;
           padding: 28px 12px 27px 12px;
-          margin-left: calc(95px - 2 * 12px);
-
+          margin-left: 95px - 2 * 12px;
           &:hover {
+            @include mediaTemp(830px) {
+              border: none;
+            }
             color: $color-black;
             border-bottom: 4px solid $color-primary;
           }
