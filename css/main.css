@@ -386,14 +386,12 @@ header {
   width: 100%;
   box-shadow: 0 3px 6px #00000029;
 }
-
-.header-container {
+header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-
-header h1 {
+header .header-container h1 {
   font-family: "Raleway", sans-serif;
   font-size: 32px;
   line-height: 37px;
@@ -401,13 +399,11 @@ header h1 {
   color: #08A6E4;
   padding: 16px 0;
 }
-
-header ul {
+header .header-container nav ul {
   list-style: none;
   display: flex;
 }
-
-header li a {
+header .header-container nav ul a {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -422,8 +418,7 @@ header li a {
   padding: 28px 12px 27px 12px;
   margin-left: calc(95px - 2 * 12px);
 }
-
-header li a:hover {
+header .header-container nav ul a:hover {
   color: #000000;
   border-bottom: 4px solid #08A6E4;
 }
