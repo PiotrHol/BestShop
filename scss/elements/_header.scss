@@ -82,9 +82,8 @@ header {
     nav {
       @include mediaTemp(830px) {
         position: absolute;
-        top: 70px;
+        top: 71px;
         left: 0;
-        z-index: -1;
         width: 100%;
         background: $color-white;
         transform: translate(100%);

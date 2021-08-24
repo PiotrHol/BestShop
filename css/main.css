@@ -468,9 +468,8 @@ header .header-container .menu-btn:checked ~ nav {
 @media (max-width: 830px) {
   header .header-container nav {
     position: absolute;
-    top: 70px;
+    top: 71px;
     left: 0;
-    z-index: -1;
     width: 100%;
     background: #FFFFFF;
     transform: translate(100%);
@@ -525,12 +524,6 @@ header .header-container nav ul a:hover {
 
 .open-section {
   width: 100%;
-}
-@media (max-width: 830px) {
-  .open-section {
-    position: relative;
-    z-index: -3;
-  }
 }
 
 .open-section--content {
