@@ -401,7 +401,7 @@ header .header-container h1 {
   color: #08A6E4;
   padding: 16px 0;
 }
-@media (max-width: 830px) {
+@media (max-width: 840px) {
   header .header-container h1 {
     margin-left: 10px;
   }
@@ -409,7 +409,7 @@ header .header-container h1 {
 header .header-container .menu-icon {
   display: none;
 }
-@media (max-width: 830px) {
+@media (max-width: 840px) {
   header .header-container .menu-icon {
     display: inline-block;
     cursor: pointer;
@@ -465,23 +465,23 @@ header .header-container .menu-btn:checked ~ .menu-icon span::after {
 header .header-container .menu-btn:checked ~ nav {
   transform: translate(0);
 }
-@media (max-width: 830px) {
+@media (max-width: 840px) {
   header .header-container nav {
     position: absolute;
-    top: 71px;
+    top: 70px;
     left: 0;
     width: 100%;
     background: #FFFFFF;
     transform: translate(100%);
     transition: all 0.5s ease-out;
-    box-shadow: 0 3px 6px #00000029;
+    box-shadow: 0 3px 6px -3px #00000029, inset 0 3px 6px -3px #00000029;
   }
 }
 header .header-container nav ul {
   list-style: none;
   display: flex;
 }
-@media (max-width: 830px) {
+@media (max-width: 840px) {
   header .header-container nav ul {
     display: block;
     margin-top: 16px;
@@ -503,7 +503,7 @@ header .header-container nav ul a {
   padding: 28px 12px 27px 12px;
   margin-left: 71px;
 }
-@media (max-width: 830px) {
+@media (max-width: 840px) {
   header .header-container nav ul a {
     width: 100%;
     margin: 0;
@@ -516,7 +516,7 @@ header .header-container nav ul a:hover {
   color: #000000;
   border-bottom: 4px solid #08A6E4;
 }
-@media (max-width: 830px) {
+@media (max-width: 840px) {
   header .header-container nav ul a:hover {
     border: none;
   }
