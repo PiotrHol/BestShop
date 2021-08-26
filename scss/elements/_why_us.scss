@@ -2,27 +2,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  padding-top: 100px;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: $color-black;
+  @include mediaTemp(750px) {
+    padding-top: 50px;
+  }
 
   .statistic__head {
     font-size: 36px;
     line-height: 42px;
+    text-align: center;
+    @include mediaTemp(750px) {
+      font-size: 30px;
+      line-height: 35px;
+      width: 70%;
+    }
   }
 
   .statistic__wrapper {
-    width: 850px;
+    width: 63%;
     display: flex;
     justify-content: space-between;
     margin: 100px 0 120px 0;
+    @include mediaTemp(750px) {
+      flex-direction: column;
+      align-items: center;
+      margin: 25px 0;
+    }
 
     .statistic__wrapper--box {
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      width: 150px;
       .statistic__image-box {
         position: relative;
         width: 63px;
@@ -78,7 +92,10 @@
         line-height: 20px;
         color: $color-grey;
         text-align: center;
-        width: 150px;
+        @include mediaTemp(750px) {
+          margin-bottom: 25px;
+          width: 90%;
+        }
       }
     }
   }

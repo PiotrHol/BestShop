@@ -604,25 +604,46 @@ header .header-container nav ul a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  padding-top: 100px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: #000000;
 }
+@media (max-width: 750px) {
+  .statistic-container {
+    padding-top: 50px;
+  }
+}
 .statistic-container .statistic__head {
   font-size: 36px;
   line-height: 42px;
+  text-align: center;
+}
+@media (max-width: 750px) {
+  .statistic-container .statistic__head {
+    font-size: 30px;
+    line-height: 35px;
+    width: 70%;
+  }
 }
 .statistic-container .statistic__wrapper {
-  width: 850px;
+  width: 63%;
   display: flex;
   justify-content: space-between;
   margin: 100px 0 120px 0;
+}
+@media (max-width: 750px) {
+  .statistic-container .statistic__wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+  }
 }
 .statistic-container .statistic__wrapper .statistic__wrapper--box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 150px;
 }
 .statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__image-box {
   position: relative;
@@ -670,7 +691,12 @@ header .header-container nav ul a:hover {
   line-height: 20px;
   color: #A5A5A5;
   text-align: center;
-  width: 150px;
+}
+@media (max-width: 750px) {
+  .statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__text {
+    margin-bottom: 25px;
+    width: 90%;
+  }
 }
 
 .benefits-section {
