@@ -463,7 +463,7 @@ header .header-container .menu-btn:checked ~ .menu-icon span::after {
   top: 0;
 }
 header .header-container .menu-btn:checked ~ nav {
-  transform: translate(0);
+  display: block;
 }
 @media (max-width: 840px) {
   header .header-container nav {
@@ -472,7 +472,7 @@ header .header-container .menu-btn:checked ~ nav {
     left: 0;
     width: 100%;
     background: #FFFFFF;
-    transform: translate(100%);
+    display: none;
     transition: all 0.5s ease-out;
     box-shadow: 0 3px 6px -3px #00000029, inset 0 3px 6px -3px #00000029;
   }
