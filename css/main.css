@@ -609,26 +609,22 @@ header .header-container nav ul a:hover {
   font-weight: 400;
   color: #000000;
 }
-
-.statistic__head {
+.statistic-container .statistic__head {
   font-size: 36px;
   line-height: 42px;
 }
-
-.statistic__wrapper {
+.statistic-container .statistic__wrapper {
   width: 850px;
   display: flex;
   justify-content: space-between;
   margin: 100px 0 120px 0;
 }
-
-.statistic__wrapper--box {
+.statistic-container .statistic__wrapper .statistic__wrapper--box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.statistic__image-box {
+.statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__image-box {
   position: relative;
   width: 63px;
   height: 63px;
@@ -636,40 +632,32 @@ header .header-container nav ul a:hover {
   display: flex;
   align-items: center;
 }
-
-.statistic__image--red {
-  background-color: #FB3B64;
-}
-
-.statistic__image--blue {
-  background-color: #08A6E4;
-}
-
-.statistic__image--green {
-  background-color: #55DFB4;
-}
-
-.statistic__image {
+.statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__image-box .statistic__image {
   height: auto;
   width: auto;
   background: transparent;
   border-radius: 0;
   position: absolute;
 }
-
-.statistic__image--person {
+.statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__image-box .statistic__image--person {
   left: 30px;
 }
-
-.statistic__image--eye {
+.statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__image-box .statistic__image--eye {
   left: 20px;
 }
-
-.statistic__image--catalog {
+.statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__image-box .statistic__image--catalog {
   left: 30px;
 }
-
-.statistic__number {
+.statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__image--red {
+  background-color: #FB3B64;
+}
+.statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__image--blue {
+  background-color: #08A6E4;
+}
+.statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__image--green {
+  background-color: #55DFB4;
+}
+.statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__number {
   font-weight: 800;
   font-size: 20px;
   line-height: 24px;
@@ -677,8 +665,7 @@ header .header-container nav ul a:hover {
   margin: 14px 0 19px 0;
   text-align: center;
 }
-
-.statistic__text {
+.statistic-container .statistic__wrapper .statistic__wrapper--box .statistic__text {
   font-size: 17px;
   line-height: 20px;
   color: #A5A5A5;
