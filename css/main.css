@@ -1383,18 +1383,15 @@ footer {
   background-color: #F7F7F7;
   box-shadow: 0 -5px 40px #00000029;
 }
-
-.footer-container {
+footer .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.footer-text {
+footer .footer-container .footer-text {
   margin: 20px 0 17px 0;
 }
-
-.footer-text h3 {
+footer .footer-container .footer-text h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 26px;
@@ -1402,29 +1399,24 @@ footer {
   color: #08A6E4;
   margin-bottom: 6px;
 }
-
-.footer-text p {
+footer .footer-container .footer-text p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 15px;
   color: #A5A5A5;
 }
-
-.footer-logo {
+footer .footer-container .footer-logo {
   display: flex;
 }
-
-.footer-link {
+footer .footer-container .footer-logo .footer-link {
   display: block;
   margin-left: 20px;
 }
-
-.footer-link:focus {
+footer .footer-container .footer-logo .footer-link:focus {
   outline: none;
 }
-
-.footer-logo__img {
+footer .footer-container .footer-logo .footer-link .footer-logo__img {
   width: 24px;
   height: 24px;
 }
