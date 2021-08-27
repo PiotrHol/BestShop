@@ -5,6 +5,10 @@
     padding-top: 100px;
     padding-bottom: 100px;
     font-weight: 400;
+    @include mediaTemp(950px) {
+      padding-top: 60px;
+      padding-bottom: 0;
+    }
 
     h3 {
       font-family: 'Raleway', sans-serif;
@@ -12,6 +16,9 @@
       line-height: 42px;
       text-align: center;
       margin-bottom: 50px;
+      @include mediaTemp(950px) {
+        margin-bottom: 14px;
+      }
     }
 
     .prices-wrapper {
@@ -19,89 +26,117 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      @include mediaTemp(950px) {
+        flex-direction: column;
+      }
 
       .pricing-box {
-        width: 372px;
-        height: 461px;
+        width: 27.5%;
         border-radius: 18px;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-
-        .pricing-box__price {
-          margin-top: 34px;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 700;
-          line-height: 1;
-          color: $color-dark-blue;
-
-          .pricing-box__price--head {
-            font-size: 20px;
-          }
-
-          .pricing-box__price--number {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 300;
-            font-size: 46px;
-            line-height: 2;
-          }
-
-          .pricing-box__price--number-red {
-            color: $color-redish;
-          }
-
-          .pricing-box__price--number-blue {
-            color: $color-blue;
-          }
-
-          .pricing-box__price--number-green {
-            color: $color-green;
-          }
-
-          .pricing-box__price--text {
-            font-size: 12px;
-          }
+        @include mediaTemp(950px) {
+          width: calc(100% - 52px);
+          margin-bottom: 54px;
         }
 
-        .pricing-box-description {
-          font-family: 'Open Sans', sans-serif;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 41px;
-          color: $color-black;
-
-          .pricing-box-description--text {
-            display: flex;
-            justify-content: center;
+        .pricing-box__wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          @include mediaTemp(950px) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
           }
 
-          .pricing-box-description--green::before {
-            content: "";
-            display: block;
-            width: 11px;
-            height: 11px;
-            background-image: url("../assets/Ckechmark-1.svg");
-            background-size: cover;
-            margin-right: 10px;
+          .pricing-box__price {
+            margin-top: 34px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            line-height: 1;
+            color: $color-dark-blue;
+            @include mediaTemp(950px) {
+              width: 47%;
+            }
+
+            .pricing-box__price--head {
+              font-size: 20px;
+            }
+
+            .pricing-box__price--number {
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 300;
+              font-size: 46px;
+              line-height: 2;
+            }
+
+            .pricing-box__price--number-red {
+              color: $color-redish;
+            }
+
+            .pricing-box__price--number-blue {
+              color: $color-blue;
+            }
+
+            .pricing-box__price--number-green {
+              color: $color-green;
+            }
+
+            .pricing-box__price--text {
+              font-size: 12px;
+            }
           }
 
-          .pricing-box-description--red::before {
-            content: "";
-            display: block;
-            width: 11px;
-            height: 11px;
-            background-image: url("../assets/Close.svg");
-            background-size: cover;
-            margin-right: 10px;
-          }
-        }
+          .pricing-box-description {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 41px;
+            color: $color-black;
+            @include mediaTemp(950px) {
+              width: 53%;
+              margin-top: 25px;
+            }
 
-        .pricing-box-description-bigger {
-          line-height: 50px;
+            .pricing-box-description--text {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              @include mediaTemp(450px) {
+                justify-content: flex-start;
+              }
+            }
+
+            .pricing-box-description--green::before {
+              content: "";
+              display: block;
+              width: 11px;
+              height: 11px;
+              background-image: url("../assets/Ckechmark-1.svg");
+              background-size: cover;
+              margin-right: 10px;
+            }
+
+            .pricing-box-description--red::before {
+              content: "";
+              display: block;
+              width: 11px;
+              height: 11px;
+              background-image: url("../assets/Close.svg");
+              background-size: cover;
+              margin-right: 10px;
+            }
+          }
+
+          .pricing-box-description-bigger {
+            line-height: 50px;
+            @include mediaTemp(950px) {
+              margin-top: 51px;
+            }
+          }
         }
 
         .pricing-box__btn {
@@ -116,6 +151,10 @@
           border-radius: 23px;
           position: relative;
           bottom: -25px;
+          margin-top: 31px;
+          @include mediaTemp(950px) {
+            margin-top: -15px;
+          }
         }
 
         .pricing-box__btn--red {
@@ -126,6 +165,10 @@
           padding: 16px 64px;
           background-color: $color-blue;
           box-shadow: 5px 10px 14px $color-shadow;
+          margin-top: 40px;
+          @include mediaTemp(950px) {
+            margin-top: -15px;
+          }
         }
 
         .pricing-box__btn--green {
@@ -146,9 +189,11 @@
       }
 
       .pricing-box--bigger {
-        width: 405px;
-        height: 500px;
+        width: 30%;
         box-shadow: 5px 10px 27px $color-shadow;
+        @include mediaTemp(950px) {
+          width: calc(100% - 6px);
+        }
       }
     }
   }
