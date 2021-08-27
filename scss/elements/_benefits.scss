@@ -7,7 +7,7 @@
     justify-content: center;
 
     .benefits-content {
-      width: 1124px;
+      width: 83%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -15,6 +15,11 @@
       margin-bottom: 105px;
       color: $color-black;
       font-weight: 400;
+      @include mediaTemp(1150px) {
+        width: 100%;
+        padding: 0 7px;
+        margin: 42px 0;
+      }
 
       .benefits-content__box {
         width: 100%;
@@ -22,9 +27,29 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include mediaTemp(1150px) {
+          flex-direction: column;
+          height: auto;
+          padding-top: 40px;
+          &:last-of-type {
+            padding-top: 0;
+          }
+        }
+        &:first-of-type {
+          .benefits-image-box {
+            justify-content: flex-end;
+          }
+          @include mediaTemp(1150px) {
+            flex-direction: column-reverse;
+          }
+        }
 
         .benefits-content__text {
           width: 420px;
+          @include mediaTemp(1150px) {
+            width: 100%;
+            padding: 0 22px;
+          }
 
           .benefits-header {
             font-family: 'Raleway', sans-serif;
@@ -32,12 +57,24 @@
             line-height: 42px;
             margin-bottom: 30px;
             width: 350px;
+            @include mediaTemp(1150px) {
+              width: 80%;
+              font-size: 30px;
+              line-height: 35px;
+              margin-top: 27px;
+            }
           }
 
           .benefits-text {
             font-family: 'Open Sans', sans-serif;
             font-size: 16px;
             line-height: 22px;
+            @include mediaTemp(1150px) {
+              width: 90%;
+              font-size: 14px;
+              line-height: 19px;
+              padding-bottom: 30px;
+            }
           }
 
           .benefits-text::after {
@@ -46,6 +83,9 @@
             height: 4px;
             width: 328px;
             margin-top: 50px;
+            @include mediaTemp(1150px) {
+              display: none;
+            }
           }
 
           .benefits-text--red::after {
@@ -63,10 +103,16 @@
 
         .benefits-content__text-left {
           margin-left: 35px;
+          @include mediaTemp(1150px) {
+            margin-left: 0;
+          }
         }
 
         .benefits-content__text-right {
           margin-right: 20px;
+          @include mediaTemp(1150px) {
+            margin-right: 0;
+          }
         }
 
         .benefits-content__text--box {
@@ -75,6 +121,9 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
+          @include mediaTemp(1150px) {
+            width: 100%;
+          }
         }
 
         .benefits-content__text--trumpet {
@@ -83,55 +132,116 @@
           background-color: $color-white;
           border: 1px solid $color-border;
           border-radius: 5px;
+          @include mediaTemp(1150px) {
+            width: 100%;
+          }
         }
 
         .benefits-image-box {
           height: 100%;
           width: 50%;
           position: relative;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          @include mediaTemp(1150px) {
+            width: auto;
+            justify-content: center;
+            align-items: center;
+          }
 
           .benefits-macbook {
             width: 386px;
             height: 219px;
-            position: absolute;
-            top: 113px;
-            right: 118px;
+            margin-right: 118px;
+            margin-bottom: 38px;
             z-index: 1;
+            @include mediaTemp(1150px) {
+              margin: 0;
+              width: 300px;
+              height: auto;
+            }
+            @include mediaTemp(600px) {
+              width: 193px;
+              height: 110px;
+            }
           }
 
           .benefits-iphone {
             width: 426px;
             height: 328px;
-            position: absolute;
-            top: 29px;
-            left: 70px;
+            margin-left: 70px;
+            margin-bottom: 13px;
             z-index: 1;
+            @include mediaTemp(1150px) {
+              margin: 0;
+              width: 300px;
+              height: auto;
+            }
+            @include mediaTemp(600px) {
+              width: 175px;
+              height: 135px;
+            }
           }
         }
 
-        .benefits-image-box--square::after {
-          content: "";
-          display: block;
-          width: 180px;
-          height: 180px;
-          background-color: $color-redish;
-          border-radius: 41px;
-          transform: rotate(45deg);
-          position: absolute;
-          top: 70px;
-          right: 100px;
+        .benefits-image-box--square {
+          position: relative;
+          &::after {
+            content: "";
+            display: block;
+            width: 180px;
+            height: 180px;
+            background-color: $color-redish;
+            border-radius: 41px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 70px;
+            right: 100px;
+            @include mediaTemp(1150px) {
+              width: 130px;
+              height: 130px;
+              position: absolute;
+              top: -20px;
+              left: 180px;
+            }
+            @include mediaTemp(600px) {
+              width: 90px;
+              height: 90px;
+              position: absolute;
+              top: -20px;
+              left: 110px;
+            }
+          }
         }
 
-        .benefits-image-box--circle::after {
-          content: "";
-          display: block;
-          width: 320px;
-          height: 320px;
-          background-color: $color-primary;
-          border-radius: 50%;
-          position: absolute;
-          top: 12px;
-          left: 70px;
+        .benefits-image-box--circle {
+          position: relative;
+          &::after {
+            content: "";
+            display: block;
+            width: 320px;
+            height: 320px;
+            background-color: $color-primary;
+            border-radius: 50%;
+            position: absolute;
+            top: 12px;
+            left: 70px;
+            @include mediaTemp(1150px) {
+              width: 220px;
+              height: 220px;
+              position: absolute;
+              top: -10px;
+              left: 0;
+            }
+            @include mediaTemp(600px) {
+              width: 132px;
+              height: 132px;
+              position: absolute;
+              top: -10px;
+              left: 0;
+            }
+          }
         }
 
         .benefits-image-box--trumpet {
@@ -141,13 +251,23 @@
           border: 1px solid $color-border;
           border-radius: 5px;
           position: relative;
-
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include mediaTemp(1150px) {
+            width: 100%;
+          }
           .benefits-trumpet {
-            width: 296px;
-            height: 208px;
-            position: absolute;
-            top: 98px;
-            left: 62px;
+            width: 67%;
+            @include mediaTemp(1150px) {
+              padding-top: 80px;
+              padding-right: 40px;
+              width: 90%;
+            }
+            @include mediaTemp(600px) {
+              padding-top: 70px;
+              padding-right: 30px;
+            }
           }
         }
       }
