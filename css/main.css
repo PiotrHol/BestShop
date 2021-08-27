@@ -1210,13 +1210,33 @@ header .header-container nav ul a:hover {
   margin-top: 50px;
   margin-bottom: 60px;
 }
+@media (max-width: 950px) {
+  .contact-container {
+    margin-top: 27px;
+    margin-bottom: 44px;
+  }
+}
 .contact-container .contact-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
 }
+@media (max-width: 950px) {
+  .contact-container .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+}
 .contact-container .contact-wrapper .contact-information {
   margin-right: 114px;
+}
+@media (max-width: 950px) {
+  .contact-container .contact-wrapper .contact-information {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 53px;
+  }
 }
 .contact-container .contact-wrapper .contact-information .contact-information__text {
   color: #000000;
@@ -1228,6 +1248,13 @@ header .header-container nav ul a:hover {
   font-size: 49px;
   line-height: 57px;
   margin-bottom: 22px;
+}
+@media (max-width: 950px) {
+  .contact-container .contact-wrapper .contact-information .contact-information__text h2 {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 5px;
+  }
 }
 .contact-container .contact-wrapper .contact-information .contact-information__text p {
   font-family: "Open Sans", sans-serif;
@@ -1244,18 +1271,39 @@ header .header-container nav ul a:hover {
   line-height: 22px;
   color: #A5A5A5;
 }
-.contact-container .contact-wrapper .contact-information .contact-information__address .contact-icon {
+@media (max-width: 950px) {
+  .contact-container .contact-wrapper .contact-information .contact-information__address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.contact-container .contact-wrapper .contact-information .contact-information__address .contact-information__address-info .contact-icon {
   width: 27px;
   height: 27px;
   margin-right: 10px;
 }
-.contact-container .contact-wrapper .contact-information .contact-information__address .contact-icon--phone {
+@media (max-width: 950px) {
+  .contact-container .contact-wrapper .contact-information .contact-information__address .contact-information__address-info .contact-icon {
+    margin-bottom: 10px;
+  }
+}
+.contact-container .contact-wrapper .contact-information .contact-information__address .contact-information__address-info .contact-icon--phone {
   margin-left: 20px;
+}
+@media (max-width: 950px) {
+  .contact-container .contact-wrapper .contact-information .contact-information__address .contact-information__address-info .contact-icon--phone {
+    margin-left: 0;
+  }
 }
 .contact-container .contact-wrapper .contact-form form {
   width: 440px;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 950px) {
+  .contact-container .contact-wrapper .contact-form form {
+    width: 100%;
+  }
 }
 .contact-container .contact-wrapper .contact-form form .contact__input-description {
   display: flex;

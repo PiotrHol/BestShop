@@ -1,14 +1,28 @@
 .contact-container {
   margin-top: 50px;
   margin-bottom: 60px;
+  @include mediaTemp(950px) {
+    margin-top: 27px;
+    margin-bottom: 44px;
+  }
 
   .contact-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
+    @include mediaTemp(950px) {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 15px;
+    }
 
     .contact-information {
       margin-right: 114px;
+      @include mediaTemp(950px) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 53px;
+      }
 
       .contact-information__text {
         color: $color-black;
@@ -20,6 +34,11 @@
           font-size: 49px;
           line-height: 57px;
           margin-bottom: 22px;
+          @include mediaTemp(950px) {
+            font-size: 40px;
+            line-height: 47px;
+            margin-bottom: 5px;
+          }
         }
 
         p {
@@ -37,15 +56,26 @@
         font-size: 16px;
         line-height: 22px;
         color: $color-grey;
-
-        .contact-icon {
-          width: 27px;
-          height: 27px;
-          margin-right: 10px;
+        @include mediaTemp(950px) {
+          flex-direction: column;
+          align-items: flex-start;
         }
+        .contact-information__address-info {
+          .contact-icon {
+            width: 27px;
+            height: 27px;
+            margin-right: 10px;
+            @include mediaTemp(950px) {
+              margin-bottom: 10px;
+            }
+          }
 
-        .contact-icon--phone {
-          margin-left: 20px;
+          .contact-icon--phone {
+            margin-left: 20px;
+            @include mediaTemp(950px) {
+              margin-left: 0;
+            }
+          }
         }
       }
     }
@@ -55,6 +85,9 @@
         width: 440px;
         display: flex;
         flex-direction: column;
+        @include mediaTemp(950px) {
+          width: 100%;
+        }
 
         .contact__input-description {
           display: flex;
