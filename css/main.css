@@ -1210,38 +1210,32 @@ header .header-container nav ul a:hover {
   margin-top: 50px;
   margin-bottom: 60px;
 }
-
-.contact-wrapper {
+.contact-container .contact-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
-.contact-information {
+.contact-container .contact-wrapper .contact-information {
   margin-right: 114px;
 }
-
-.contact-information__text {
+.contact-container .contact-wrapper .contact-information .contact-information__text {
   color: #000000;
   margin-bottom: 40px;
 }
-
-.contact-information__text h2 {
+.contact-container .contact-wrapper .contact-information .contact-information__text h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 49px;
   line-height: 57px;
   margin-bottom: 22px;
 }
-
-.contact-information__text p {
+.contact-container .contact-wrapper .contact-information .contact-information__text p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-
-.contact-information__address {
+.contact-container .contact-wrapper .contact-information .contact-information__address {
   display: flex;
   align-items: center;
   font-family: "Open Sans", sans-serif;
@@ -1250,24 +1244,20 @@ header .header-container nav ul a:hover {
   line-height: 22px;
   color: #A5A5A5;
 }
-
-.contact-icon {
+.contact-container .contact-wrapper .contact-information .contact-information__address .contact-icon {
   width: 27px;
   height: 27px;
   margin-right: 10px;
 }
-
-.contact-icon--phone {
+.contact-container .contact-wrapper .contact-information .contact-information__address .contact-icon--phone {
   margin-left: 20px;
 }
-
-.contact-form form {
+.contact-container .contact-wrapper .contact-form form {
   width: 440px;
   display: flex;
   flex-direction: column;
 }
-
-.contact__input-description {
+.contact-container .contact-wrapper .contact-form form .contact__input-description {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -1278,8 +1268,7 @@ header .header-container nav ul a:hover {
   letter-spacing: 3.28px;
   color: #08A6E4;
 }
-
-.contact__form-element {
+.contact-container .contact-wrapper .contact-form form .contact__input-description .contact__form-element {
   margin: 10px 0 30px 0;
   width: 100%;
   font-family: "Open Sans", sans-serif;
@@ -1291,12 +1280,10 @@ header .header-container nav ul a:hover {
   border: 1px solid #FFFFFF;
   border-bottom: 1px solid #95989A;
 }
-
-.contact__form-element:focus {
+.contact-container .contact-wrapper .contact-form form .contact__input-description .contact__form-element:focus {
   border-bottom: 1px solid #08A6E4;
 }
-
-.contact__check-regulation {
+.contact-container .contact-wrapper .contact-form form .contact__check-regulation {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1306,15 +1293,19 @@ header .header-container nav ul a:hover {
   cursor: pointer;
   display: flex;
 }
-
-.contact__check-regulation input {
+.contact-container .contact-wrapper .contact-form form .contact__check-regulation input {
   position: absolute;
   opacity: 0;
   height: 0;
   width: 0;
 }
-
-.contact__check-regulation span {
+.contact-container .contact-wrapper .contact-form form .contact__check-regulation input:checked + span {
+  background-image: url("../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #08A6E4;
+}
+.contact-container .contact-wrapper .contact-form form .contact__check-regulation span {
   width: 24px;
   height: 24px;
   display: block;
@@ -1323,15 +1314,7 @@ header .header-container nav ul a:hover {
   border-radius: 4px;
   margin-right: 10px;
 }
-
-.contact__check-regulation input:checked + span {
-  background-image: url("../assets/Checkmark.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid #08A6E4;
-}
-
-.contact__form-btn {
+.contact-container .contact-wrapper .contact-form form .contact__form-btn {
   display: inline-block;
   width: 226px;
   height: 57px;
