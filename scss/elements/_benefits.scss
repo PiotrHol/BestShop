@@ -262,9 +262,9 @@
             @include mediaTemp(1150px) {
               padding-top: 80px;
               padding-right: 40px;
-              width: 90%;
             }
             @include mediaTemp(600px) {
+              width: 90%;
               padding-top: 70px;
               padding-right: 30px;
             }

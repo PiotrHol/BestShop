@@ -990,11 +990,11 @@ header .header-container nav ul a:hover {
   .benefits-section .benefits-container .benefits-content .benefits-content__box .benefits-image-box--trumpet .benefits-trumpet {
     padding-top: 80px;
     padding-right: 40px;
-    width: 90%;
   }
 }
 @media (max-width: 600px) {
   .benefits-section .benefits-container .benefits-content .benefits-content__box .benefits-image-box--trumpet .benefits-trumpet {
+    width: 90%;
     padding-top: 70px;
     padding-right: 30px;
   }
