@@ -17,13 +17,13 @@ header {
       font-weight: 300;
       color: $color-primary;
       padding: 16px 0;
-      @include mediaTemp(840px) {
+      @include mediaTemp(1024px) {
         margin-left: 10px;
       }
     }
 
     .menu-icon {
-      @include mediaTemp(840px) {
+      @include mediaTemp(1024px) {
         display: inline-block;
         cursor: pointer;
         width: 20px;
@@ -80,7 +80,7 @@ header {
     }
 
     nav {
-      @include mediaTemp(840px) {
+      @include mediaTemp(1024px) {
         position: absolute;
         top: 70px;
         left: 0;
@@ -91,7 +91,7 @@ header {
         box-shadow: 0 3px 6px -3px $color-head-foot-shadow, inset 0 3px 6px -3px $color-head-foot-shadow;
       }
       ul {
-        @include mediaTemp(840px) {
+        @include mediaTemp(1024px) {
           display: block;
           margin-top: 16px;
           margin-bottom: 20px;
@@ -99,7 +99,7 @@ header {
         list-style: none;
         display: flex;
         a {
-          @include mediaTemp(840px) {
+          @include mediaTemp(1024px) {
             width: 100%;
             margin: 0;
             height: auto;
@@ -120,7 +120,7 @@ header {
           padding: 28px 12px 27px 12px;
           margin-left: 95px - 2 * 12px;
           &:hover {
-            @include mediaTemp(840px) {
+            @include mediaTemp(1024px) {
               border: none;
             }
             color: $color-black;
