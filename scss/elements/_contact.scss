@@ -127,30 +127,6 @@
           margin-bottom: 20px;
           cursor: pointer;
           display: flex;
-
-          input {
-            position: absolute;
-            opacity: 0;
-            height: 0;
-            width: 0;
-
-            &:checked + span {
-              background-image: url("../assets/Checkmark.svg");
-              background-repeat: no-repeat;
-              background-position: center;
-              border: 1px solid $color-primary;
-            }
-          }
-
-          span {
-            width: 24px;
-            height: 24px;
-            display: block;
-            flex-shrink: 0;
-            border: 1px solid $color-border-grey;
-            border-radius: 4px;
-            margin-right: 10px;
-          }
         }
 
         .contact__form-btn {

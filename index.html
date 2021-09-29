@@ -169,6 +169,77 @@
         </div>
     </div>
 </section>
+<section id="calculator">
+    <div class="calculator-container container">
+        <h3 class="calculator-header">Calculate how much you'll pay</h3>
+        <div class="calculator-wrapper">
+            <div class="calculator-inputs">
+                <form action="">
+                    <label>
+                        <input type="number" id="quantity" class="calculator-form__input" min="1" placeholder="Products quantity" data-price="0.5">
+                    </label>
+                    <label>
+                        <input type="number" id="orders" class="calculator-form__input" min="1" placeholder="Estimated orders in month"
+                               data-price="0.25">
+                    </label>
+                    <div class="calculator-form__input calculator-form__select">
+                        Choose package
+                    </div>
+                    <ul class="calculator-form__list d-none">
+                        <li class="basic">Basic</li>
+                        <li class="professional">Professional</li>
+                        <li class="premium">Premium</li>
+                    </ul>
+                    <div class="calculator-form__check">
+                        <label class="checkbox-input">
+                            <input type="checkbox" id="accounting">
+                            <span></span>
+                            Accounting
+                        </label>
+                    </div>
+                    <div class="calculator-form__check">
+                        <label class="checkbox-input">
+                            <input type="checkbox" id="terminal">
+                            <span></span>
+                            Rental of a payment terminal
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="calculator-results">
+                <ul class="calculator-results__list">
+                    <li class="" data-id="products" data-result="0">
+                        <span class="calculator-results__item">Products</span>
+                        <span class="calculator-results__calc">20 * $0.25</span>
+                        <span class="calculator-results__price">$10</span>
+                    </li>
+                    <li class="" data-id="orders" data-result="0">
+                        <span class="calculator-results__item">Orders</span>
+                        <span class="calculator-results__calc">30 * $0.25</span>
+                        <span class="calculator-results__price">$7.5</span>
+                    </li>
+                    <li class="" data-id="package" data-result="0">
+                        <span class="calculator-results__item">Package</span>
+                        <span class="calculator-results__select">Premium</span>
+                        <span class="calculator-results__price">$60</span>
+                    </li>
+                    <li class="" data-id="accounting" data-result="0">
+                        <span class="calculator-results__item">Accounting</span>
+                        <span class="calculator-results__price">$35</span>
+                    </li>
+                    <li class="" data-id="terminal" data-result="0">
+                        <span class="calculator-results__item">Terminal</span>
+                        <span class="calculator-results__price">$5</span>
+                    </li>
+                </ul>
+                <div class="calculator-results__total">
+                    <span class="calculator-results__item">Total</span>
+                    <span class="calculator-results__summary">$0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="contact">
     <div class=" contact-container container">
         <div class="contact-wrapper">
@@ -198,7 +269,7 @@
                         Email
                         <input type="email" class="contact__form-element">
                     </label>
-                    <label class="contact__check-regulation">
+                    <label class="contact__check-regulation checkbox-input">
                         <input type="checkbox">
                         <span></span>
                         I hereby give consent for my personal data included in my application to be processed for the
