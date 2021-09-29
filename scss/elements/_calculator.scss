@@ -16,6 +16,9 @@
     line-height: 42px;
     text-align: center;
     margin-bottom: 50px;
+    @include mediaTemp(470px) {
+      padding: 0 15px;
+    }
   }
 
   .calculator-wrapper {
@@ -24,9 +27,22 @@
     display: flex;
     justify-content: space-between;
 
+    @include mediaTemp(950px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .calculator-inputs {
+      @include mediaTemp(950px) {
+        margin-bottom: 30px;
+      }
+
       form {
         width: 440px;
+        @include mediaTemp(470px) {
+          width: 100%;
+          padding: 0 15px;
+        }
 
         .calculator-form__input {
           width: 100%;
@@ -101,6 +117,9 @@
           line-height: 17px;
           font-weight: 400;
           color: $color-contact-grey;
+          @include mediaTemp(470px) {
+            width: 100%;
+          }
 
           label {
             display: flex;
@@ -122,6 +141,10 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      @include mediaTemp(470px) {
+        width: 100%;
+        padding: 0 15px;
+      }
 
       .calculator-results__list {
         width: 100%;
