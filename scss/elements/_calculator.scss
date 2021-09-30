@@ -66,6 +66,8 @@
         .calculator-form__select {
           display: flex;
           justify-content: space-between;
+          cursor: pointer;
+
           &::after {
             content: "";
             display: block;
@@ -96,16 +98,31 @@
           width: 440px;
           position: absolute;
           z-index: 1;
+          cursor: pointer;
+          @include mediaTemp(470px) {
+            width: 360px;
+            left: calc((100% - 360px) / 2);
+          }
+          @include mediaTemp(400px) {
+            width: calc(100% - 30px);
+            left: 15px;
+          }
 
           li {
             padding: 7.5px 20px;
 
             &:first-child {
               padding-top: 11px;
+              border-radius: 6px 6px 0 0;
             }
 
             &:last-child {
               padding-bottom: 11px;
+              border-radius: 0 0 6px 6px;
+            }
+
+            &:hover {
+              background-color: $color-grey;
             }
           }
         }
@@ -158,10 +175,6 @@
           justify-content: space-between;
           align-items: center;
           margin-bottom: 8px;
-
-          &:last-child {
-            margin-bottom: 22px;
-          }
 
           span {
             width: 25%;

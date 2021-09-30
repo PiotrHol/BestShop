@@ -177,7 +177,7 @@
             <div class="calculator-inputs">
                 <form action="">
                     <label>
-                        <input type="number" id="quantity" class="calculator-form__input" min="1" placeholder="Products quantity" data-price="0.5">
+                        <input type="number" id="products" class="calculator-form__input" min="1" placeholder="Products quantity" data-price="0.5">
                     </label>
                     <label>
                         <input type="number" id="orders" class="calculator-form__input" min="1" placeholder="Estimated orders in month"
@@ -187,9 +187,9 @@
                         Choose package
                     </div>
                     <ul class="calculator-form__list d-none">
-                        <li class="basic" data-price="20">Basic</li>
-                        <li class="professional" data-price="40">Professional</li>
-                        <li class="premium" data-price="60">Premium</li>
+                        <li class="basic" data-id="package" data-price="0">Basic</li>
+                        <li class="professional" data-id="package" data-price="25">Professional</li>
+                        <li class="premium" data-id="package" data-price="60">Premium</li>
                     </ul>
                     <div class="calculator-form__check">
                         <label class="checkbox-input">
