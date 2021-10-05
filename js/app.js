@@ -51,7 +51,7 @@ function calculateQuantity() {
 }
 
 function toggleList() {
-    if (packageList.classList.toString().includes("d-none")) {
+    if (packageList.classList.contains("d-none")) {
         packageList.classList.remove("d-none");
         toggleListBtn.classList.add("calculator-form__selectrotate");
     }
@@ -68,7 +68,7 @@ function checkboxResult() {
 }
 
 function elementAction(element, price) {
-    if (element.classList.toString().includes("d-none")) {
+    if (element.classList.contains("d-none")) {
         element.classList.remove("d-none");
         element.dataset.result = price;
         element.querySelector(".calculator-results__price").innerText = `$${element.dataset.result}`;
@@ -82,7 +82,7 @@ function elementAction(element, price) {
 function calculateTotal() {
     let summaryValue = 0;
     for (let i = 0; i < resultList.children.length; i++) {
-        if (!(resultList.children[i].classList.toString().includes("d-none"))) {
+        if (!(resultList.children[i].classList.contains("d-none"))) {
             summaryValue += parseFloat(resultList.children[i].dataset.result);
         }
     }
